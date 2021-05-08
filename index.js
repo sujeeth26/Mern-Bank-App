@@ -4,11 +4,13 @@ const app=express();
 const cors=require("cors");
 const userroute=require("./routes/customer");
 const tranxroute=require("./routes/tranx");
+//IDJI0kwAxApsQI2y
+//mongodb+srv://sujeeth:<password>@cluster0.yrhyj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 
 //DB Connection
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/Banking", {
+  .connect(process.env.MONGODB_URI||"mongodb://sujeeth:IDJI0kwAxApsQI2y@cluster0.yrhyj.mongodb.net/bankDB?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
