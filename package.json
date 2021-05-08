@@ -1,0 +1,27 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.18.2"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"cd bank-frontend && npm run build",
+    "install-bank-frontend":"cd bank-frontend && npm install",
+    "start": "node index.js",
+    "heroku-postbuild":"npm run install-bank-frontend && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
