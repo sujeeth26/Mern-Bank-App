@@ -10,9 +10,10 @@ const tranxroute=require("./routes/tranx");
 
 //DB Connection
 mongoose
-  .connect(process.env.MONGODB_URI||"mongodb://sujeeth:IDJI0kwAxApsQI2y@cluster0.yrhyj.mongodb.net/bankDB?retryWrites=true&w=majority", {
+  .connect(process.env.MONGODB_URI||"mongodb+srv://sujeeth:IDJI0kwAxApsQI2y@cluster0.yrhyj.mongodb.net/bankdb?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify:false,
     useCreateIndex: true
   })
   .then(() => {

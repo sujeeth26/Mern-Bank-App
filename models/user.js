@@ -17,10 +17,10 @@ const userSchema=new mongoose.Schema({
        unique:true
     },
     balance:{
-        type:Number,
+        type:String,
         default:0,
     },
 })
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('USER', userSchema);
 module.exports.User=User;
